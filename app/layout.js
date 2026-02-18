@@ -5,12 +5,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
-      <body style={{fontFamily:"sans-serif"}}>
-        <nav style={{padding:"10px",borderBottom:"1px solid #ccc"}}>
-          <a href="/">Forside</a> | 
+      <body style={{fontFamily:"Arial, sans-serif", margin:0}}>
+        <nav style={{
+          padding:"15px",
+          borderBottom:"1px solid #ddd",
+          display:"flex",
+          gap:"15px"
+        }}>
+          <a href="/">Forside</a>
           <a href="/leaderboard">Leaderboard</a>
+          <a href="/scorecard">Scorekort</a>
+          <a href="/admin">Admin</a>
         </nav>
-        {children}
+        <div style={{padding:"20px"}}>
+          {children}
+        </div>
       </body>
     </html>
   )
