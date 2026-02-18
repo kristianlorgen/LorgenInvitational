@@ -1,17 +1,8 @@
-export const metadata = {
-  title: "Lorgen Invitational"
-}
-
-export default function RootLayout({ children }) {
+export default function Home() {
   return (
-    <html>
-      <body style={{fontFamily:"sans-serif"}}>
-        <nav style={{padding:"10px",borderBottom:"1px solid #ccc"}}>
-          <a href="/">Forside</a> | 
-          <a href="/leaderboard">Leaderboard</a>
-        </nav>
-        {children}
-      </body>
-    </html>
+    <div>
+      <h1>Lorgen Invitational ⛳</h1>
+      <p>Offisiell turneringsside</p>
+    </div>
   )
 }
